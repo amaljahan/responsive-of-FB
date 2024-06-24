@@ -1,0 +1,856 @@
+
+
+:root{
+    --greySearch:#c6c5c5;
+    --hover-color:#a2a2a288;
+    --searchboxgrey:#f1f0f0;
+}
+* {
+    
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #f0f2f5;
+    margin: .25%;
+    overflow: hidden;
+    
+    
+}
+nav{
+    width: 100%;
+    height: 62px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1 1 1 rgb(168, 168, 168);
+    
+    
+}
+
+.nav-left{
+    
+    width: 20%;
+    height:100%;
+    /* display: block; */
+    /* background-color: violet; */
+    display: flex;
+    justify-content: flex-start;
+    /* border: 1px solid; */
+    /* the solid is needed to visible the  border.*/
+    
+}
+.search-fb{
+
+    height: 55%;
+    width: 100%;
+    /* background-color: aqua; */
+    margin: 5% 0 0 0%;
+}
+.nav-left a{
+    width: 20%;
+    height: 100%;
+    /* background-color: orange; */
+}
+
+.logo{
+
+    width: 47px;
+    /* padding-top: 9px; */
+    display: flex;
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    /* padding-left: 17px; */
+    margin: 20% 0 0 12%;
+}
+.input-box{
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    border-radius: 17px;
+    border-style: none;
+    background-color: var(--searchboxgrey);
+    font-size: 100%;
+    border: 0;
+    outline: 0;/* it removes the outereline of the input box.*/
+}
+
+/* .nav-middle{
+    
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    /* background-color: rgb(214, 37, 37); */
+    /* border: 1px solid; */
+    /* the solid is needed to visible the  border.*/
+    /* margin-left: 50px; 
+
+    
+} */
+.middle-section{
+    width: 50%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    
+}
+.middle-section ul{
+    /* bordrer: 1px solid coral; */
+    height:93%;
+    width: 80%;
+    list-style: none;
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0 0% 0 9%;
+    padding-inline-start: 0;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 11%;
+    /* its a buildup property as some value and we want to put it into 0*/
+
+    
+}
+.middle-section div{
+    width: 50%;
+    height: 7%;
+    /* border:1px solid darkslategrey; */
+    margin: 0 0% 0 9%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-icon{
+
+    
+    width: 40px;
+    /* padding-top: 7px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    /* padding-left: 46px;
+*/
+}
+.home-uline-icon{
+    position: absolute;/*it is used to overlay the uline over home icon*/
+    width: 107px;
+    height: 4px;
+    /* padding-top: 47px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    /* padding-left: 15px; */
+}
+.freinds-icon{
+    width: 42px;
+    /* padding-top: 7px; */
+    float: left;
+    border-radius: 50%;
+    /* padding-right: 5px; */
+    /* padding-left: 81px; */
+
+}
+.groups-icon{
+    width: 44px;
+    /* padding-top: 9px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    /* padding-left: 81px; */
+
+
+}
+
+
+.nav-right{
+    /* position: absolute; */
+    right: 0;
+    height: 100%;
+    /* float: right; */
+    width: 30%;
+    display: flex;
+
+    /* border: 1px solid; */
+    /* the solid is needed to visible the  border.*/
+    
+}
+.nav-right ul{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+    justify-content: end;
+    gap: 2%;
+    margin: 0 2% 0 0;
+    align-items: end;
+}
+
+
+.find-friends{
+   
+    float: left;
+    
+}
+.grid-menu{
+    
+   
+    /* width: 44px; */
+    /* padding-top: 4px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    /* padding-left: 0; */
+}
+.messenger{
+    
+    /* width: 44px; */
+    /* padding-top: 6px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    padding-bottom: 4px;
+}
+.notification{
+    
+    /* width: 44px; */
+    /* padding-top: 3px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    padding-bottom: 3px;
+}
+.profile{  
+    /* width: 38px; */
+    /* padding-top: 6px; */
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    padding-bottom: 4px;
+
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* .user-profile-activity{
+    width: 24%;
+    height: 52%;
+    background-color: red;
+    position: absolute;
+    top: 66px;
+    right: 40px;
+    z-index: 1;
+    /* padding: 15px; */
+/*}
+.profile-visit{
+    width: 90%;
+    height: 25%;
+    background-color: yellow;
+    margin: 20px;
+}
+.profiie-1st{
+    width: 97%;
+    height: 45%;
+    background-color: sandybrown;
+    margin: 5px;
+}
+
+ */
+
+
+
+.main-area{
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    display: flex ;
+}
+
+
+.left-sidebar{
+    display: flex;/*it is used to get vetically arranged block style*/
+    flex-direction: column;
+    /* gap: 20px; */
+    width:23%;
+    height: auto;
+    /* padding-left: opxs; */
+    /* float: left; */
+    background-color: #f0f2f5;
+    overflow: hidden;
+    
+
+}
+.left-sidebar a{
+    text-decoration: none;
+    color: black;
+    
+}
+.left-sidebar li{
+    height: 54px;
+    list-style-type: none;
+    
+}/* 
+.left-sidebar span{
+    text-align: center;
+    align-items: center;
+} */
+.center-sidebar{
+   
+    /* border: 1px solid; */
+    width: 100%;
+    /* float: left; */
+    height: 100vh;
+    background-color: #f0f2f5;
+    /* border: 1px solid black; */
+    overflow:scroll ;
+    position: relative;
+
+    padding: 2vh 0vh 0vh 13vh;
+}
+.right-sidebar{
+       /* border: 1px solid; */
+       width: 26%;
+       height: auto;
+       display: block;
+       /* background-color: #f82b01; */
+       /* padding-top: 20px; */
+       /* position: fixed; */
+       right: 22px;
+       top: 85px;
+       position: fixed;
+
+}
+
+
+
+.right-sidebar li{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.left-sidebar ul{
+    list-style-type: none;
+    padding-left: 0px;
+    overflow-y:scroll ;
+}
+li:hover{
+    background-color:var(--hover-color);
+}
+.left-sidebar span{
+
+    padding-bottom: 29px;
+    /* top: 20px; */
+    /* text-align: center; */
+}
+
+.group{
+    color: #65676b;
+    /* padding-left: 6rem; */
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: block;
+
+}
+.add-img{
+    
+    width: 3rem;
+    width: auto;
+    /* padding-left: 32px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 7px;
+    
+}
+.add-img:hover{
+
+    background-color: var(--hover-color);
+}
+.right-sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.add-img img{
+    border-radius: 71%;
+}
+
+
+
+
+.story { 
+    
+    width: 80vh;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 7px;
+    /* color: black; */
+    padding: 11px;
+    box-shadow: 1px 1px 8px #c7c5c5;
+    display: flex;
+    margin-bottom: 22px;
+    
+
+}
+.story p{
+    color: black;
+    /* margin-bottom: 5px; */
+    display: block;
+    font-weight: bold;
+    /* display: inline-block; */
+    font-size:18px ;
+    margin: 0;
+}
+
+.addstory{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.down-element{
+
+}
+
+.small{
+    
+    display: flex;
+    /* background-color: red; */
+    color: #65676B;
+    font-size: 17px;
+    font-weight: initial;
+
+ }
+ .blogPoint{
+    width: 80vh;
+    height: 8rem;
+    background-color: #fff;
+    border-radius: 15px;
+    /* color: black; */
+    padding: 11px;
+    /* margin: 16px 0px 0 187px; */
+    display: block;
+    box-shadow: 1px 1px 8px #c7c5c5;
+    /* float: left; */
+ }
+ .blogs{
+    display: flex;
+ }
+ .profiile{
+    display: flex;
+    padding-right:8px;
+   
+ }
+ .searchbox{
+    width: 67vh;
+    height: 6vh;
+    /* background-color: aqua; */
+    display: flex;
+    border-radius: 0%;
+    margin-top: 7px;
+    /* border-radius: 15%; */
+ }
+ .searchbox input{
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 100%;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--searchboxgrey);
+    font-size: 15px;
+    outline: none;
+ }
+ .blogPoint hr{
+    padding: 0px 0px 0px 0px;
+ }
+.socialConnection{
+    width:100%;
+    height: 48%;
+    /* background-color: aqua; */
+    display: flex;
+    border-top: 1px solid rgb(231, 231, 231);
+    /* margin-top: 5px; */
+}
+.socialConnection a{
+    text-decoration: none;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.post-container{
+    width: 80vh;
+    height:auto;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #c7c5c5;
+
+}
+
+
+/* ----------------------------------------------------------------======== */
+
+.reel{
+    width: 333px;
+    height: auto;
+    background-color: #fff;
+    margin-left: 13%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.reel-div{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    gap: 5px;
+    padding-left: 5px;
+}
+.reel-icon{
+    width: 25px;
+}
+.d-block{
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding: 2vh 0vh 0vh 2vh;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+
+}
+.user-profile p{
+    font-weight: 700;
+    color:black;
+    margin: 0;
+}
+.user-profile span{
+    font-size: 13px;
+    color: #8c8d8d;
+}
+.user-profile a{
+    color: #8c8d8d;
+}
+.content{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+
+}
+.activityIcons{
+    /* border: 1px solid; */
+    border-top:1px solid black;
+    display: inline;
+    margin-left: 5vh;
+    width: 100%;
+}
+.activityIcons div{
+    
+    display: inline-flex;
+    align-items: center;
+    margin-left: 9vh;
+    /* display: inline;
+    display: flex; */
+}
+.activity{
+    display: flex;
+
+    width: 100%;
+}
+.activity img{
+    display: inline;
+
+}
+.activity span{
+    float: right;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+
+}
+#ul-footer{
+    margin: 0;
+    display: flex;
+    list-style-type: disc;
+    overflow-y: visible;
+    flex-wrap: wrap;
+    
+}
+#ul-footer li:hover{
+    background-color: transparent;
+}
+
+#ul-footer a{
+    color:#8c8c8c;
+}
+.dot{
+    font-weight: 800;
+    text-align: center;
+    color: #8c8c8c;
+    
+}
+.write{
+    width: 9%;
+    /* background-color: red; */
+    position: absolute;
+    top: 646px;
+    right: 1%;
+    
+    
+}
+.write img{
+    border-radius: 50%;
+    position: fixed;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+@media (max-width:1441px){
+    .left-scroll{
+        width: 100%;
+        height: 490px;
+        
+    }
+    .left-sidebar ul {
+        list-style-type: none;
+        padding-left: 0px;
+        overflow-y: scroll;
+        height: 471px;
+    }
+    #ul-footer {
+        margin: 0;
+        height: 170px;
+        display: flex;
+        list-style-type: disc;
+        overflow-y: visible;
+        flex-wrap: wrap;
+    }  
+    .write {
+        width: 9%;
+        /* background-color: red; */
+        position: absolute;
+        top: 520px;
+        right: 1%;
+    } 
+    .activityIcons div {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 46px;
+    }
+    .socialConnection a {
+        padding-top: 0;
+    }
+}
+@media (max-width: 1371px){
+    .find-friends {
+        display: none;
+        float: left;
+    }
+
+}
+@media (max-width: 1147px){
+    .right-sidebar {
+        width: 20%;
+    }
+    .search-fb {
+    display: none;
+    
+    }
+}
+@media (max-width:1033px){
+    .left-sidebar{
+        display: none;
+    }
+    .right-sidebar {
+        width: 25%;
+    }
+}
+@media (max-width: 855px){
+    
+    .nav-left {
+        width: 20%;
+    }
+    .middle-section div {
+        width:40%;
+        margin: 0;
+    }
+    .right-sidebar {
+        display: none;
+    }
+    
+    .middle-section {
+        width: 30%;
+    }
+}
+@media (max-width:710px){
+    .write {
+        display:none;
+    }
+    .middle-section {
+        display: none;
+    }
+    .nav-right {
+        margin-left: 120px;
+    }
+
+}
+@media (max-width:625px){
+    .center-sidebar {
+        padding: 10px;
+    }
+
+}
+
+
+
+@media (max-width:426px){
+    .story {
+        width: 400px;
+
+    }
+    .blogPoint {
+        width: 400px;
+    }
+    .socialConnection a {
+        text-decoration: none;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .activityIcons {
+        margin: 0;
+    }
+    .activityIcons div {
+        margin-left: 18px;
+    }
+    .post-container {
+        width: 400px;
+    }.reel{
+        margin-left: 8%;
+    }
+
+
+
+
+}
+
+
+@media (max-width:376px){
+    .story {
+        width: 350px;
+
+    }
+    .blogPoint {
+        width: 350px;
+    }
+    .socialConnection a {
+        text-decoration: none;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .activityIcons {
+        margin: 0;
+    }
+    .activityIcons div {
+        margin-left: 4px;
+    }
+    .post-container {
+        width: 350px;
+    }
+    .logo{
+        margin: 60% 0 0 42%;
+    }
+    .d-block {
+        height: 450px;
+    }
+
+    .reel{
+        width: 260px;
+    }
+
+
+}
+
+
+@media (max-width:321px){
+    .center-sidebar {
+        padding: 10px;
+    }
+    .nav-right {
+        width: 38%;
+    }
+    .logo {
+        padding: 6px 0 0 5px;
+    }
+    .story {
+        width: 300px;
+    }
+    .small {
+        font-size: 12px;
+    }
+    .blogPoint {
+        width: 300px;
+    }
+    .blogs{
+        display: flex;
+    }
+    .feeling{
+        display: none;
+    }
+    .socialConnection a {
+        padding: 9px;
+    }
+    .post-container {
+        width: 300px;
+    }
+    .activityIcons {
+        display: flex;
+        margin: 0;
+    }
+    .activityIcons div {
+        margin-left: -1px;
+        font-size: 15px;
+    }
+ 
+}
